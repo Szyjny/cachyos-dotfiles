@@ -1,0 +1,182 @@
+config_version = 14
+
+[accessibility]
+ui_scale = 1.0000000074505806
+
+[audio]
+enable_overdrive = true
+
+[bar]
+order = [ "default" ]
+
+    [bar.default]
+    background_opacity = 0.9499999787658453
+    capsule_radius = 4
+    center = [ "clock" ]
+    end = [ "media", "spacer_1", "tray", "notifications", "group:g2", "session" ]
+    scale = 1.0000000074505806
+    shadow = false
+    start = [ "group:g1", "spacer_1", "workspaces" ]
+    thickness = 24
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border = ""
+        enabled = true
+        fill = "on_secondary"
+        id = "g1"
+        members = [ "temp", "sysmon_2", "sysmon_3" ]
+        opacity = 1.0
+        padding = 6.0
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        enabled = true
+        fill = "surface_variant"
+        id = "g2"
+        members = [ "network", "volume", "battery" ]
+        opacity = 1.0
+        padding = 6.0
+        radius = 4.0
+
+[brightness]
+enable_ddcutil = true
+
+[calendar]
+enabled = true
+
+[control_center.calendar]
+show_events_card = false
+
+[desktop_widgets]
+enabled = false
+
+[location]
+address = "Brodnica, Poland"
+
+[lockscreen]
+monitors = [ "eDP-1" ]
+wallpaper = "/home/matt/Pictures/wallpapers/Astronout.jpg"
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 814.85186767578125
+    output = "HDMI-A-1"
+    placement_height = 980.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 768.0
+    cy = 741.5999755859375
+    output = "eDP-1"
+    placement_height = 960.0
+    placement_width = 1536.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[nightlight]
+enabled = true
+force = true
+temperature_day = 7100
+temperature_night = 3200
+
+[osd]
+monitors = [ "eDP-1" ]
+
+[shell]
+corner_radius_scale = 0.0
+font_family = "Iosevka Nerd Font Mono"
+
+    [shell.launcher]
+    categories = false
+
+    [shell.panel]
+    wallpaper_placement = "floating"
+    wallpaper_position = "center"
+
+[theme]
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-tonal-spot"
+
+    [theme.templates]
+    builtin_ids = [ "gtk3", "gtk4", "hyprland", "kcolorscheme", "qt", "starship" ]
+
+[wallpaper]
+directory = "/home/matt/Pictures/wallpapers"
+
+    [wallpaper.default]
+    path = "/home/matt/Pictures/wallpapers/Red feder.jpg"
+
+    [wallpaper.last]
+    path = "/home/matt/Pictures/wallpapers/Bridge.jpg"
+
+    [wallpaper.monitor.eDP-1]
+    fill_color = "primary"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/home/matt/Pictures/wallpapers/Sky.jpg"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/matt/Pictures/wallpapers/Bridge.jpg"
+
+[widget.clock]
+format = "{:%H:%M}"
+tooltip_format = "{:%H:%M %A %d.%m.%Y}"
+
+[widget.media]
+max_length = 350
+show_progress = true
+
+[widget.workspaces]
+show_labels = true
